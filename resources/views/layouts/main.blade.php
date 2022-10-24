@@ -33,7 +33,7 @@
                         <a href="/" class="nav-link">eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class="nav-link">eventos</a>
+                        <a href="/events/create" class="nav-link">Criar eventos</a>
                     </li>
                     <li class="nav-item">
                         <a href="/" class="nav-link">eventos</a>
@@ -47,6 +47,8 @@
     <footer>
         <p>&copy; 2022</p>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
