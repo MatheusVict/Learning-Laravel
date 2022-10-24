@@ -12,7 +12,10 @@ Route::get('/events/create', [EventController::class, 'create']);
 
 Route::get('/teste', [EventController::class, 'teste']);
 
-Route::get('/teste/{id}', function ($id) {
+Route::post('/events', [EventController::class, 'store']);
+
+
+/*Route::get('/teste/{id}', function ($id) {
     return view('testes', ['id' => $id]);
 });
 
@@ -22,4 +25,4 @@ Route::get('/tested/{id?}', function ($id = null) { // Parametro opcional
 
 Route::get('/testedd/{id?}', function ($id = null) { // Parametro opcional
     return view('testes', ['id' => $id]);
-});
+});*/
