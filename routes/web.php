@@ -19,5 +19,20 @@ Route::get('/', function () {
 });
 
 Route::get('/teste', function () {
-    return view('teste');
+
+    $busca = request('search');
+
+    return view('teste', ['busca' => $busca]);
+});
+
+Route::get('/teste/{id}', function ($id) {
+    return view('testes', ['id' => $id]);
+});
+
+Route::get('/tested/{id?}', function ($id = null) { // Parametro opcional
+    return view('testes', ['id' => $id]);
+});
+
+Route::get('/testedd/{id?}', function ($id = null) { // Parametro opcional
+    return view('testes', ['id' => $id]);
 });
