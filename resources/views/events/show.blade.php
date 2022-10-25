@@ -21,6 +21,13 @@
                 <ion-icon name="star-outline"></ion-icon>Dono
             </p>
             <a href="#" class="btn btn-primary" id="event-submit">Confirmar presença</a>
+            <ul id="items-list">
+                @foreach($event->items as $items)
+                <li>
+                    <ion-icon name="play-outline"></ion-icon><span>{{$items}}</span>
+                </li>
+                @endforeach
+            </ul>
         </div>
         <div class="col-md-12" id="description-container">
             <h3>Sobre o evento:</h3>
