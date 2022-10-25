@@ -21,7 +21,7 @@
                     <p class="card-date">10/09/2022</p>
                     <h5 class="card-title">{{$events->title}}</h5>
                     <p class="card-participants">X Partipantes</p>
-                    <a href="#" class="btn btn-primary">Saber mais</a>
+                    <a href="/events/{{$events->id}}" class="btn btn-primary">Saber mais</a>
                 </div>
             </div>
             @endforeach

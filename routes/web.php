@@ -14,6 +14,8 @@ Route::get('/teste', [EventController::class, 'teste']);
 
 Route::post('/events', [EventController::class, 'store']);
 
+Route::get('/events/{id}', [EventController::class, 'show']);
+
 
 /*Route::get('/teste/{id}', function ($id) {
     return view('testes', ['id' => $id]);
