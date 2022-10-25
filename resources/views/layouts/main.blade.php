@@ -42,7 +42,16 @@
             </div>
         </nav>
     </header>
-    @yield('content')
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                @if(session('msg'))
+                <p class="msg">{{session('msg')}}</p>
+                @endif
+                @yield('content')
+            </div>
+        </div>
+    </main>
     <!--Como se fosse os childrens ou as extensões do handlebars-->
     <footer>
         <p>&copy; 2022</p>

@@ -16,7 +16,7 @@
         <div id="cards-container" class="row">
             @foreach($event as $events)
             <div class="card col-md-3">
-                <img src="/img/evento.jpg" alt="{{$events->title}}">
+                <img src="/img/events/{{$events->image}}" alt="{{$events->title}}">
                 <div class="card-body">
                     <p class="card-date">10/09/2022</p>
                     <h5 class="card-title">{{$events->title}}</h5>
