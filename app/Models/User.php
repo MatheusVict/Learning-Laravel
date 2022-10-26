@@ -55,12 +55,17 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $appends = [
+    /*protected $appends = [
         'profile_photo_url',
     ];
-
+*/
     public function events()
     {
         return $this->hasMany('App\Models\Event');
+    }
+
+    public function eventsAsParticipant()
+    {
+        return $this->belongsToMany('App\Models\Event');
     }
 }

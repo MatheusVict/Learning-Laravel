@@ -24,7 +24,7 @@
                 <div class="card-body">
                     <p class="card-date">{{date_format($events->date, 'd/m/Y  h:m')}}</p>
                     <h5 class="card-title">{{$events->title}}</h5>
-                    <p class="card-participants">X Partipantes</p>
+                    <p class="card-participants">{{count($events->users)}} Partipantes</p>
                     <a href="/events/{{$events->id}}" class="btn btn-primary">Saber mais</a>
                 </div>
             </div>
